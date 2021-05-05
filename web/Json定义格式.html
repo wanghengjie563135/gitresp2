@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //1:基本定义格式
+        var person = {"username": "wsn", "age": 23, "gender": true};
+        //json对象名.键名
+       // var username = person.username;
+        //json对象名["键名"]
+        var username = person["username"];
+        //alert(username);
+        //alert(person)
+        //for in 循环
+       /*for(var key in person){
+           alert(key+":"+person[key]);
+       }*/
+        //2:数组定义格式
+        var persons = {
+            persons: [{"username": "whj", "age": 23, "gender": true}, {
+                "username": "whj",
+                "age": 23,
+                "gender": true
+            }, {"username": "whj", "age": 23, "gender": true}]
+        }
+        //var age = persons.persons[2].age;
+        //alert(age);
+        //alert(persons);
+        var ps=[{"username": "whj", "age": 23, "gender": true}, {
+            "username": "whj", "age": 43, "gender": true
+        }, {"username": "whj", "age": 23, "gender": true}];
+        for (var i = 0; i <ps.length ; i++) {
+            var p = ps[i];
+            for (var key in p){
+                alert(key+":"+p[key]);
+            }
+        }
+       // var age = ps[1].age;
+       // alert(age);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
